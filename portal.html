@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portal Login | Bright Future</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="portal-body">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="portal.html">Portal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="portal-container">
+    <div class="portal-box">
+      <h2>Welcome Back</h2>
+      <p>Sign in to access your grades, fees, and school updates.</p>
+      
+      <form class="portal-form">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="portal-link">Forgot your password? Contact admin.</p>
+      <!-- This is hidden until the user logs in -->
+<div id="dashboard" style="display: none; text-align: left;">
+  <h3 style="color: #1b7f5a; margin-bottom: 10px;">Welcome, Pupil!</h3>
+  <div style="background: #f4f7f6; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+    <p><strong>Name:</strong> <span id="pupil-name">Loading...</span></p>
+    <p><strong>Grade Level:</strong> <span id="pupil-grade">Loading...</span></p>
+    <p><strong>Attendance:</strong> <span id="pupil-attendance">Loading...</span></p>
+  </div>
+  <h4 style="color: #0b2545; margin-bottom: 10px;">Recent Grades:</h4>
+  <ul style="list-style: none; padding: 0; line-height: 1.8;">
+    <li>Mathematics: <strong>A</strong></li>
+    <li>Science: <strong>A-</strong></li>
+    <li>English: <strong>B+</strong></li>
+    <li>Social Studies:<strong>A</strong></li>
+    <li>CRE:<strong>B+</strong></li>
+  </ul>
+  <button onclick="logout()" class="btn" style="background: #c62828; width: 100%; margin-top: 15px;">Logout</button>
+</div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Bright Future International Primary School</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
